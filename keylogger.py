@@ -25,3 +25,4 @@ def on_press(key):
 # enregistrement de l'observateur de frappe
 with Listener(on_press=on_press) as listener:
     listener.join()
+
