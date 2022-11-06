@@ -14,7 +14,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock: # ouverture du so
         print("Socket créé !\r\nEn attente d'événements...")
 
         while True: # boucle infinie pour écouter les données entrantes
-            d = sock.recvfrom(1024) # réception des données
+            d = sock.recvfrom(1024) # réception des données.
             data = d[0].decode('utf-8') # décodage du message reçu en utf-8
             addr = d[1] # adresse du client (non utilisée ici)
 
